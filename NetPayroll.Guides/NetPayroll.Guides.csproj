@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE4D4794-8E62-46DE-8476-CDFFAB22F50B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NetPayroll.Guides</RootNamespace>
+    <AssemblyName>NetPayroll.Guides</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <IntermediateOutputPath>obj\Debug</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <IntermediateOutputPath>obj\Release</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\GuidesLegal.cs" />
+    <Compile Include="Common\PeriodFormat.cs" />
+    <Compile Include="Common\PeriodUtils.cs" />
+    <Compile Include="Common\Period.cs" />
+    <Compile Include="Taxing\GuidesTaxing.cs" />
+    <Compile Include="Taxing\IGuidesTaxing.cs" />
+    <Compile Include="Taxing\OperationsTaxing.cs" />
+    <Compile Include="Taxing\PropertiesTaxing.cs" />
+    <Compile Include="Garant\GuidesGarant.cs" />
+    <Compile Include="Garant\IGuidesGarant.cs" />
+    <Compile Include="Garant\OperationsGarant.cs" />
+    <Compile Include="Garant\PropertiesGarant.cs" />
+    <Compile Include="Health\GuidesHealth.cs" />
+    <Compile Include="Health\IGuidesHealth.cs" />
+    <Compile Include="Health\OperationsHealth.cs" />
+    <Compile Include="Health\PropertiesHealth.cs" />
+    <Compile Include="Social\GuidesSocial.cs" />
+    <Compile Include="Social\IGuidesSocial.cs" />
+    <Compile Include="Social\OperationsSocial.cs" />
+    <Compile Include="Social\PropertiesSocial.cs" />
+    <Compile Include="Employ\GuidesEmploy.cs" />
+    <Compile Include="Employ\IGuidesEmploy.cs" />
+    <Compile Include="Employ\OperationsEmploy.cs" />
+    <Compile Include="Employ\PropertiesEmploy.cs" />
+    <Compile Include="Operations\MathDec.cs" />
+    <Compile Include="Operations\RoundingDec.cs" />
+    <Compile Include="Operations\RoundingInt.cs" />
+    <Compile Include="Operations\RoundingPay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
