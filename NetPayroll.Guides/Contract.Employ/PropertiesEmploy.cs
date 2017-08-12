@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Employ
+namespace NetPayroll.Guides.Contract.Employ
 {
     class PropertiesEmploy2011
     {

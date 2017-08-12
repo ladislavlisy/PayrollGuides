@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
 
-namespace RadPayroll.Guides.Social
+namespace NetPayroll.Guides.Contract.Health
 {
-    public interface IGuidesSocial
+    public interface IGuidesHealth
     {
         bool IsPeriodValid(Period period);
 
@@ -13,15 +13,7 @@ namespace RadPayroll.Guides.Social
 
         decimal BasisAnnualMaximum();
 
-        decimal FactorEmployee();
-
-        decimal FactorEmployeeGarant();
-
-        decimal FactorEmployeeReduce();
-
-        decimal FactorEmployer();
-
-        decimal FactorEmployerHigher();
+        decimal FactorCompound();
 
         decimal IncomeEmploymentMargin();
 

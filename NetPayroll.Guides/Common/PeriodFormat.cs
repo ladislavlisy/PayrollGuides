@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace RadPayroll.Guides.Common
+namespace NetPayroll.Guides.Common
 {
     public static class PeriodFormat
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Taxing
+namespace NetPayroll.Guides.Contract.Taxing
 {
     class PropertiesTaxing2011
     {

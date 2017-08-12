@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
 
-namespace RadPayroll.Guides.Employ
+namespace NetPayroll.Guides.Contract.Employ
 {
     public static class OperationsEmploy
     {

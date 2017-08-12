@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
 
-namespace RadPayroll.Guides.Taxing
+namespace NetPayroll.Guides.Contract.Taxing
 {
     public interface IGuidesTaxing
     {

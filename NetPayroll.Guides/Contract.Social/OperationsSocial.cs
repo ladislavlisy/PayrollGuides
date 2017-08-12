@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using RadPayroll.Guides.Operations;
 
-namespace RadPayroll.Guides.Social
+namespace NetPayroll.Guides.Contract.Social
 {
     public static class OperationsSocial
     {

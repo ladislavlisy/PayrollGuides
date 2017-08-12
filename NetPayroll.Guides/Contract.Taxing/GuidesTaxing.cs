@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using RadPayroll.Guides.Common;
-using RadPayroll.Guides.Health;
-using RadPayroll.Guides.Social;
+using NetPayroll.Guides.Common;
+using NetPayroll.Guides.Contract.Health;
+using NetPayroll.Guides.Contract.Social;
 
-namespace RadPayroll.Guides.Taxing
+namespace NetPayroll.Guides.Contract.Taxing
 {
     public class GuidesTaxing : GuidesLegal, IGuidesTaxing
     {

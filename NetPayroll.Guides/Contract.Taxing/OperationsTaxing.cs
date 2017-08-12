@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Garant
+namespace NetPayroll.Guides.Contract.Taxing
 {
-    public static class OperationsGarant
+    public static class OperationsTaxing
     {
     }
 }

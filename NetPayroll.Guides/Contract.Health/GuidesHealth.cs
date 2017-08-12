@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
 
-namespace RadPayroll.Guides.Health
+namespace NetPayroll.Guides.Contract.Health
 {
     public class GuidesHealth : GuidesLegal, IGuidesHealth
     {

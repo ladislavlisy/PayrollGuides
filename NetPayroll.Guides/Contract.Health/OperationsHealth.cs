@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Health
+namespace NetPayroll.Guides.Contract.Health
 {
     public static class OperationsHealth
     {

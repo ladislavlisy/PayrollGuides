@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Common
+namespace NetPayroll.Guides.Common
 {
     public class Period : IComparable
     {

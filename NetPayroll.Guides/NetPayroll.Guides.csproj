@@ -37,33 +37,37 @@
     <Compile Include="Common\PeriodFormat.cs" />
     <Compile Include="Common\PeriodUtils.cs" />
     <Compile Include="Common\Period.cs" />
-    <Compile Include="Taxing\GuidesTaxing.cs" />
-    <Compile Include="Taxing\IGuidesTaxing.cs" />
-    <Compile Include="Taxing\OperationsTaxing.cs" />
-    <Compile Include="Taxing\PropertiesTaxing.cs" />
-    <Compile Include="Garant\GuidesGarant.cs" />
-    <Compile Include="Garant\IGuidesGarant.cs" />
-    <Compile Include="Garant\OperationsGarant.cs" />
-    <Compile Include="Garant\PropertiesGarant.cs" />
-    <Compile Include="Health\GuidesHealth.cs" />
-    <Compile Include="Health\IGuidesHealth.cs" />
-    <Compile Include="Health\OperationsHealth.cs" />
-    <Compile Include="Health\PropertiesHealth.cs" />
-    <Compile Include="Social\GuidesSocial.cs" />
-    <Compile Include="Social\IGuidesSocial.cs" />
-    <Compile Include="Social\OperationsSocial.cs" />
-    <Compile Include="Social\PropertiesSocial.cs" />
-    <Compile Include="Employ\GuidesEmploy.cs" />
-    <Compile Include="Employ\IGuidesEmploy.cs" />
-    <Compile Include="Employ\OperationsEmploy.cs" />
-    <Compile Include="Employ\PropertiesEmploy.cs" />
+    <Compile Include="Contract.Taxing\GuidesTaxing.cs" />
+    <Compile Include="Contract.Taxing\IGuidesTaxing.cs" />
+    <Compile Include="Contract.Taxing\OperationsTaxing.cs" />
+    <Compile Include="Contract.Taxing\PropertiesTaxing.cs" />
+    <Compile Include="Contract.Garant\GuidesGarant.cs" />
+    <Compile Include="Contract.Garant\IGuidesGarant.cs" />
+    <Compile Include="Contract.Garant\OperationsGarant.cs" />
+    <Compile Include="Contract.Garant\PropertiesGarant.cs" />
+    <Compile Include="Contract.Health\GuidesHealth.cs" />
+    <Compile Include="Contract.Health\IGuidesHealth.cs" />
+    <Compile Include="Contract.Health\OperationsHealth.cs" />
+    <Compile Include="Contract.Health\PropertiesHealth.cs" />
+    <Compile Include="Contract.Social\GuidesSocial.cs" />
+    <Compile Include="Contract.Social\IGuidesSocial.cs" />
+    <Compile Include="Contract.Social\OperationsSocial.cs" />
+    <Compile Include="Contract.Social\PropertiesSocial.cs" />
+    <Compile Include="Contract.Employ\GuidesEmploy.cs" />
+    <Compile Include="Contract.Employ\IGuidesEmploy.cs" />
+    <Compile Include="Contract.Employ\OperationsEmploy.cs" />
+    <Compile Include="Contract.Employ\PropertiesEmploy.cs" />
     <Compile Include="Operations\MathDec.cs" />
     <Compile Include="Operations\RoundingDec.cs" />
     <Compile Include="Operations\RoundingInt.cs" />
     <Compile Include="Operations\RoundingPay.cs" />
+    <Compile Include="Interfaces\IHealthContract.cs" />
+    <Compile Include="Contract.Health\HealthContract2011.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

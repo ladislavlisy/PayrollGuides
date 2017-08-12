@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadPayroll.Guides.Garant
+namespace NetPayroll.Guides.Contract.Garant
 {
     class PropertiesGarant2011
     {

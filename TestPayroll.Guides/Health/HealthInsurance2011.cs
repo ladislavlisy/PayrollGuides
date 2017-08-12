@@ -1,6 +1,8 @@
 ﻿﻿using NUnit.Framework;
 using System;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
+using NetPayroll.Guides.Interfaces;
+using NetPayroll.Guides.Contract.Health;
 
 namespace TestPayroll.Guides
 {

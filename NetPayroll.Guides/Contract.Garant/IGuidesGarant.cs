@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using RadPayroll.Guides.Common;
+using NetPayroll.Guides.Common;
 
-namespace RadPayroll.Guides.Garant
+namespace NetPayroll.Guides.Contract.Garant
 {
     public interface IGuidesGarant
     {
