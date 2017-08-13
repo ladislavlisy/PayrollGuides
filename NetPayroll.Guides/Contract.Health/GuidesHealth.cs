@@ -7,13 +7,13 @@ namespace NetPayroll.Guides.Contract.Health
 {
     public class GuidesHealth : GuidesLegal, IGuidesHealth
     {
-        private readonly Int32 __BasisMonthlyObligatory;
-        private readonly decimal __BasisAnnualMaximum;
-        private readonly decimal __FactorCompound;
-        private readonly decimal __IncomeEmploymentMargin;
-        private readonly decimal __IncomeContractMargin;
+        protected readonly Int32 __BasisMonthlyObligatory;
+        protected readonly decimal __BasisAnnualMaximum;
+        protected readonly decimal __FactorCompound;
+        protected readonly decimal __IncomeEmploymentMargin;
+        protected readonly decimal __IncomeContractMargin;
 
-        private GuidesHealth(uint legalYear, 
+		protected GuidesHealth(uint legalYear, 
             Int32 basisMonthlyObligatory,
             decimal basisAnnualMaximum,
             decimal factorCompound,
@@ -27,15 +27,6 @@ namespace NetPayroll.Guides.Contract.Health
             __IncomeContractMargin = incomeContractMargin;
         }
 
-        public static GuidesHealth Guides2011()
-        {
-            return new GuidesHealth(PropertiesHealth2011.LEGAL_YEAR,
-                PropertiesHealth2011.MONTHLY_BASIS,
-                PropertiesHealth2011.ANNUAL_BASIS_MAXIMUM,
-                PropertiesHealth2011.FACTOR_COMPOUND,
-                PropertiesHealth2011.INCOME_EMPLOY_MARGIN,
-                PropertiesHealth2011.INCOME_AGREEM_MARGIN);
-        }
         public Int32 BasisMonthlyObligatory()
         {
             return __BasisMonthlyObligatory;

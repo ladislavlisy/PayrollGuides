@@ -18,9 +18,9 @@ namespace TestPayroll.Guides
 
             decimal valueExpect = 650m;
 
-            IHealthContract contract = new HealthContract2011(periodInTest);
+            IHealthContract contract = new HealthContract2011();
 
-            decimal valueTested = contract.EmployeeContribution(basisInTest);
+            decimal valueTested = contract.EmployeeContribution(periodInTest, basisInTest);
 
             Assert.AreEqual(valueExpect, valueTested);
  

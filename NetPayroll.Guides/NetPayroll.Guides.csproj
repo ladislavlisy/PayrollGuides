@@ -63,6 +63,8 @@
     <Compile Include="Operations\RoundingPay.cs" />
     <Compile Include="Interfaces\IHealthContract.cs" />
     <Compile Include="Contract.Health\HealthContract2011.cs" />
+    <Compile Include="Contract.Health\HealthContractPrototype.cs" />
+    <Compile Include="Contract.Health\GuidesHealth2011.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
