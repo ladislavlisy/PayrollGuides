@@ -5,7 +5,7 @@ using NetPayroll.Guides.Common;
 
 namespace NetPayroll.Guides.Contract.Health
 {
-    public class GuidesHealth : GuidesLegal, IGuidesHealth
+    public class GuidesHealth : GuidesLegal
     {
         protected readonly Int32 __BasisMonthlyObligatory;
         protected readonly decimal __BasisAnnualMaximum;
@@ -25,31 +25,6 @@ namespace NetPayroll.Guides.Contract.Health
             __FactorCompound = factorCompound;
             __IncomeEmploymentMargin = incomeEmploymentMargin;
             __IncomeContractMargin = incomeContractMargin;
-        }
-
-        public Int32 BasisMonthlyObligatory()
-        {
-            return __BasisMonthlyObligatory;
-        }
-
-        public decimal BasisAnnualMaximum()
-        {
-            return __BasisAnnualMaximum;
-        }
-
-        public decimal FactorCompound()
-        {
-            return __FactorCompound;
-        }
-
-        public decimal IncomeEmploymentMargin()
-        {
-            return __IncomeEmploymentMargin;
-        }
-
-        public decimal IncomeContractMargin()
-        {
-            return __IncomeContractMargin;
         }
 
         public virtual object Clone()

@@ -5,24 +5,17 @@ using NetPayroll.Guides.Common;
 
 namespace NetPayroll.Guides.Contract.Employ
 {
-    class GuidesEmploy : GuidesLegal, IGuidesEmploy
+    public class GuidesEmploy : GuidesLegal
     {
-        private readonly Int32 __WeeklyWorkingDays;
+        protected readonly Int32 __WeeklyWorkingDays;
 
-        private readonly Int32 __DailyWorkingHours;
+        protected readonly Int32 __DailyWorkingHours;
 
-        private readonly Int32 __DailyWorkingSeconds;
+        protected readonly Int32 __DailyWorkingSeconds;
 
-        private readonly Int32 __WeeklyWorkingSeconds;
+        protected readonly Int32 __WeeklyWorkingSeconds;
 
-        public static GuidesEmploy Guides2011()
-        {
-            return new GuidesEmploy(PropertiesEmploy2011.LEGAL_YEAR,
-                PropertiesEmploy2011.DAYS_WORKING_WEEKLY,
-                PropertiesEmploy2011.HOURS_WORKING_DAILY);
-        }
-
-        private GuidesEmploy(uint legalYear,
+        protected GuidesEmploy(uint legalYear,
             Int32 weeklyWorkingDays, Int32 dailyWorkingHours) : base(legalYear)
 		{
             __WeeklyWorkingDays = weeklyWorkingDays;
@@ -33,26 +26,6 @@ namespace NetPayroll.Guides.Contract.Employ
 
             __WeeklyWorkingSeconds = OperationsEmploy.WorkingSecondsWeekly(__WeeklyWorkingDays, __DailyWorkingHours);
 
-        }
-
-        public Int32 WeeklyWorkingDays()
-        {
-            return __WeeklyWorkingDays;
-        }
-
-        public Int32 DailyWorkingHours()
-        {
-            return __DailyWorkingHours;
-        }
-
-        public Int32 DailyWorkingSeconds()
-        {
-            return __DailyWorkingSeconds;
-        }
-
-        public Int32 WeeklyWorkingSeconds()
-        {
-            return __WeeklyWorkingSeconds;
         }
 
         public virtual object Clone()

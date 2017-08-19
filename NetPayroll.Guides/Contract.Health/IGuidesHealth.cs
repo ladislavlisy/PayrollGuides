@@ -9,14 +9,14 @@ namespace NetPayroll.Guides.Contract.Health
     {
         bool IsPeriodValid(Period period);
 
-        Int32 BasisMonthlyObligatory();
+        Int32 BasisMonthlyObligatory(Period period);
 
-        decimal BasisAnnualMaximum();
+        decimal BasisAnnualMaximum(Period period);
 
-        decimal FactorCompound();
+        decimal FactorCompound(Period period);
 
-        decimal IncomeEmploymentMargin();
+        decimal IncomeEmploymentMargin(Period period);
 
-        decimal IncomeContractMargin();
+        decimal IncomeContractMargin(Period period);
     }
 }

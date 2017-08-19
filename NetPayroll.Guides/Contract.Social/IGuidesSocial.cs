@@ -9,22 +9,22 @@ namespace NetPayroll.Guides.Contract.Social
     {
         bool IsPeriodValid(Period period);
 
-        Int32 BasisMonthlyObligatory();
+        Int32 BasisMonthlyObligatory(Period period);
 
-        decimal BasisAnnualMaximum();
+        decimal BasisAnnualMaximum(Period period);
 
-        decimal FactorEmployee();
+        decimal FactorEmployee(Period period);
 
-        decimal FactorEmployeeGarant();
+        decimal FactorEmployeeGarant(Period period);
 
-        decimal FactorEmployeeReduce();
+        decimal FactorEmployeeReduce(Period period);
 
-        decimal FactorEmployer();
+        decimal FactorEmployer(Period period);
 
-        decimal FactorEmployerHigher();
+        decimal FactorEmployerHigher(Period period);
 
-        decimal IncomeEmploymentMargin();
+        decimal IncomeEmploymentMargin(Period period);
 
-        decimal IncomeContractMargin();
+        decimal IncomeContractMargin(Period period);
     }
 }

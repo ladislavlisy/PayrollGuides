@@ -9,12 +9,12 @@ namespace NetPayroll.Guides.Contract.Employ
     {
         bool IsPeriodValid(Period period);
 
-        Int32 WeeklyWorkingDays();
+        Int32 WeeklyWorkingDays(Period period);
 
-        Int32 DailyWorkingHours();
+        Int32 DailyWorkingHours(Period period);
 
-        Int32 DailyWorkingSeconds();
+        Int32 DailyWorkingSeconds(Period period);
 
-        Int32 WeeklyWorkingSeconds();
+        Int32 WeeklyWorkingSeconds(Period period);
     }
 }

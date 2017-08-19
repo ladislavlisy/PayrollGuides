@@ -18,7 +18,7 @@ namespace TestPayroll.Guides
 
             decimal valueExpect = 650m;
 
-            IHealthContract contract = new HealthContract2011();
+            IContractHealth contract = new ContractHealth2011();
 
             decimal valueTested = contract.EmployeeContribution(periodInTest, basisInTest);
 

@@ -4,9 +4,9 @@ using NetPayroll.Guides.Interfaces;
 
 namespace NetPayroll.Guides.Contract.Health
 {
-    public abstract class HealthContractPrototype : IHealthContract
+    public abstract class ContractHealthPrototype : IContractHealth
     {
-        public HealthContractPrototype(IGuidesHealth guides)
+        public ContractHealthPrototype(IGuidesHealth guides)
         {
             this.ContractGuides = guides;
         }

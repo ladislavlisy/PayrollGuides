@@ -41,10 +41,6 @@
     <Compile Include="Contract.Taxing\IGuidesTaxing.cs" />
     <Compile Include="Contract.Taxing\OperationsTaxing.cs" />
     <Compile Include="Contract.Taxing\PropertiesTaxing.cs" />
-    <Compile Include="Contract.Garant\GuidesGarant.cs" />
-    <Compile Include="Contract.Garant\IGuidesGarant.cs" />
-    <Compile Include="Contract.Garant\OperationsGarant.cs" />
-    <Compile Include="Contract.Garant\PropertiesGarant.cs" />
     <Compile Include="Contract.Health\GuidesHealth.cs" />
     <Compile Include="Contract.Health\IGuidesHealth.cs" />
     <Compile Include="Contract.Health\OperationsHealth.cs" />
@@ -61,10 +57,19 @@
     <Compile Include="Operations\RoundingDec.cs" />
     <Compile Include="Operations\RoundingInt.cs" />
     <Compile Include="Operations\RoundingPay.cs" />
-    <Compile Include="Interfaces\IHealthContract.cs" />
-    <Compile Include="Contract.Health\HealthContract2011.cs" />
-    <Compile Include="Contract.Health\HealthContractPrototype.cs" />
+    <Compile Include="Interfaces\IContractHealth.cs" />
+    <Compile Include="Contract.Health\ContractHealth2011.cs" />
+    <Compile Include="Contract.Health\ContractHealthPrototype.cs" />
     <Compile Include="Contract.Health\GuidesHealth2011.cs" />
+    <Compile Include="Contract.Social\GuidesSocial2011.cs" />
+    <Compile Include="Contract.Taxing\GuidesTaxing2011.cs" />
+    <Compile Include="Contract.Employ\GuidesEmploy2011.cs" />
+    <Compile Include="Contract.Social\ContractSocialPrototype.cs" />
+    <Compile Include="Interfaces\IContractSocial.cs" />
+    <Compile Include="Contract.Taxing\ContractTaxingPrototype.cs" />
+    <Compile Include="Interfaces\IContractTaxing.cs" />
+    <Compile Include="Contract.Social\ContractSocial2011.cs" />
+    <Compile Include="Contract.Taxing\ContractTaxing2011.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
