@@ -70,6 +70,9 @@
     <Compile Include="Interfaces\IContractTaxing.cs" />
     <Compile Include="Contract.Social\ContractSocial2011.cs" />
     <Compile Include="Contract.Taxing\ContractTaxing2011.cs" />
+    <Compile Include="Contract.Employ\ContractEmploy.cs" />
+    <Compile Include="Contract.Employ\ContractEmployPrototype.cs" />
+    <Compile Include="Interfaces\IContractEmploy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
