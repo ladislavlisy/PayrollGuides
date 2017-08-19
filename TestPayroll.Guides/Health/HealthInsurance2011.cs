@@ -18,9 +18,11 @@ namespace TestPayroll.Guides
 
             decimal valueExpect = 650m;
 
+            bool onlyPositive = true;
+
             IContractHealth contract = new ContractHealth2011();
 
-            decimal valueTested = contract.EmployeeContribution(periodInTest, basisInTest);
+            decimal valueTested = contract.EmployeePrimaryContribution(periodInTest, onlyPositive, basisInTest);
 
             Assert.AreEqual(valueExpect, valueTested);
  

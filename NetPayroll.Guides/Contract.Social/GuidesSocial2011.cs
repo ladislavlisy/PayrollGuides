@@ -5,16 +5,17 @@ namespace NetPayroll.Guides.Contract.Social
 {
     public class GuidesSocial2011 : GuidesSocial, IGuidesSocial
     {
-		public GuidesSocial2011() : base(PropertiesSocial2011.LEGAL_YEAR,
-				PropertiesSocial2011.MONTHLY_BASIS,
-				PropertiesSocial2011.ANNUAL_BASIS_MAXIMUM,
-				PropertiesSocial2011.FACTOR_EMPLOYEE,
-				PropertiesSocial2011.FACTOR_EMPLOYEE_GARANT,
-				PropertiesSocial2011.FACTOR_REDUCE_GARANT,
-				PropertiesSocial2011.FACTOR_EMPLOYER,
-				PropertiesSocial2011.FACTOR_EMPLOYER_HIGHER,
-				PropertiesSocial2011.INCOME_EMPLOY_MARGIN,
-				PropertiesSocial2011.INCOME_AGREEM_MARGIN)
+		public GuidesSocial2011() : base(
+            PropertiesSocial2011.LEGAL_YEAR,
+            PropertiesSocial2011.BASIS_MONTHLY_MINIMUM,
+            PropertiesSocial2011.BASIS_ANNUAL_MAXIMUM,
+			PropertiesSocial2011.FACTOR_EMPLOYEE,
+			PropertiesSocial2011.FACTOR_EMPLOYEE_GARANT,
+			PropertiesSocial2011.FACTOR_REDUCE_GARANT,
+			PropertiesSocial2011.FACTOR_EMPLOYER,
+			PropertiesSocial2011.FACTOR_EMPLOYER_HIGHER,
+			PropertiesSocial2011.INCOME_EMPLOY_MARGIN,
+			PropertiesSocial2011.INCOME_AGREEM_MARGIN)
         {
         }
 		public Int32 BasisMonthlyObligatory(Period period)

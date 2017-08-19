@@ -8,9 +8,9 @@ namespace NetPayroll.Guides.Contract.Social
     {
         public const uint LEGAL_YEAR = 2011;
 
-        public const Int32 MONTHLY_BASIS = 0;
+        public const Int32 BASIS_MONTHLY_MINIMUM = 0;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = 1781280m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1781280m;
 
         public const decimal FACTOR_EMPLOYER = 25.0m;
 
@@ -31,9 +31,9 @@ namespace NetPayroll.Guides.Contract.Social
     {
         public const uint LEGAL_YEAR = 2012;
 
-        public const Int32 MONTHLY_BASIS = PropertiesSocial2011.MONTHLY_BASIS;
+        public const Int32 BASIS_MONTHLY_MINIMUM = PropertiesSocial2011.BASIS_MONTHLY_MINIMUM;
 
-        public const decimal BASIS_ANNUAL = 1206576m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1206576m;
 
         public const decimal FACTOR_EMPLOYER = PropertiesSocial2011.FACTOR_EMPLOYER;
 
@@ -54,9 +54,9 @@ namespace NetPayroll.Guides.Contract.Social
     {
         public const uint LEGAL_YEAR = 2013;
 
-        public const Int32 MONTHLY_BASIS = PropertiesSocial2012.MONTHLY_BASIS;
+        public const Int32 BASIS_MONTHLY_MINIMUM = PropertiesSocial2012.BASIS_MONTHLY_MINIMUM;
 
-        public const decimal BASIS_ANNUAL = 1242432m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1242432m;
 
         public const decimal FACTOR_EMPLOYER = PropertiesSocial2012.FACTOR_EMPLOYER;
 
@@ -77,9 +77,9 @@ namespace NetPayroll.Guides.Contract.Social
     {
         public const uint LEGAL_YEAR = 2014;
 
-        public const Int32 MONTHLY_BASIS = PropertiesSocial2013.MONTHLY_BASIS;
+        public const Int32 BASIS_MONTHLY_MINIMUM = PropertiesSocial2013.BASIS_MONTHLY_MINIMUM;
 
-        public const decimal BASIS_ANNUAL = 1245216m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1245216m;
 
         public const decimal FACTOR_EMPLOYER = PropertiesSocial2013.FACTOR_EMPLOYER;
 
@@ -100,9 +100,9 @@ namespace NetPayroll.Guides.Contract.Social
     {
         public const uint LEGAL_YEAR = 2015;
 
-        public const Int32 MONTHLY_BASIS = PropertiesSocial2014.MONTHLY_BASIS;
+        public const Int32 BASIS_MONTHLY_MINIMUM = PropertiesSocial2014.BASIS_MONTHLY_MINIMUM;
 
-        public const decimal BASIS_ANNUAL = 1277328m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1277328m;
 
         public const decimal FACTOR_EMPLOYER = PropertiesSocial2014.FACTOR_EMPLOYER;
 

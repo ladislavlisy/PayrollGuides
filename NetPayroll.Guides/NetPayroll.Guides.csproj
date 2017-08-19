@@ -73,11 +73,15 @@
     <Compile Include="Contract.Employ\ContractEmploy.cs" />
     <Compile Include="Contract.Employ\ContractEmployPrototype.cs" />
     <Compile Include="Interfaces\IContractEmploy.cs" />
+    <Compile Include="Constants\WorkHealthTerms.cs" />
+    <Compile Include="Constants\WorkSocialTerms.cs" />
+    <Compile Include="Constants\WorkEmployTerms.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Service\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

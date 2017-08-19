@@ -8,9 +8,9 @@ namespace NetPayroll.Guides.Contract.Health
     {
         public const uint LEGAL_YEAR = 2011;
 
-        public const Int32 MONTHLY_BASIS = 8000;
+        public const Int32 BASIS_MONTHLY_MINIMUM = 8000;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = 1781280m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1781280m;
 
         public const decimal FACTOR_COMPOUND = 13.5m;
 
@@ -22,9 +22,9 @@ namespace NetPayroll.Guides.Contract.Health
     {
         public const uint LEGAL_YEAR = 2012;
 
-        public const Int32 MONTHLY_BASIS = PropertiesHealth2011.MONTHLY_BASIS;
+        public const Int32 BASIS_MONTHLY_MINIMUM = PropertiesHealth2011.BASIS_MONTHLY_MINIMUM;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = 1809864m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 1809864m;
 
         public const decimal FACTOR_COMPOUND = PropertiesHealth2011.FACTOR_COMPOUND;
 
@@ -37,11 +37,11 @@ namespace NetPayroll.Guides.Contract.Health
     {
         public const uint LEGAL_YEAR = 2013;
 
-        public const Int32 MONTHLY_BASIS_UPTO_07 = 8000;
+        public const Int32 BASIS_MONTHLY_MINIMUM_UPTO_07 = 8000;
 
-        public const Int32 MONTHLY_BASIS = 8500;
+        public const Int32 BASIS_MONTHLY_MINIMUM = 8500;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = 0m;
+        public const decimal BASIS_ANNUAL_MAXIMUM = 0m;
 
         public const decimal FACTOR_COMPOUND = PropertiesHealth2012.FACTOR_COMPOUND;
 
@@ -54,9 +54,9 @@ namespace NetPayroll.Guides.Contract.Health
     {
         public const uint LEGAL_YEAR = 2014;
 
-        public const Int32 MONTHLY_BASIS = 8500;
+        public const Int32 BASIS_MONTHLY_MINIMUM = 8500;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = PropertiesHealth2013.ANNUAL_BASIS_MAXIMUM;
+        public const decimal BASIS_ANNUAL_MAXIMUM = PropertiesHealth2013.BASIS_ANNUAL_MAXIMUM;
 
         public const decimal FACTOR_COMPOUND = PropertiesHealth2013.FACTOR_COMPOUND;
 
@@ -69,9 +69,9 @@ namespace NetPayroll.Guides.Contract.Health
     {
         public const uint LEGAL_YEAR = 2015;
 
-        public const Int32 MONTHLY_BASIS = 9200;
+        public const Int32 BASIS_MONTHLY_MINIMUM = 9200;
 
-        public const decimal ANNUAL_BASIS_MAXIMUM = PropertiesHealth2014.ANNUAL_BASIS_MAXIMUM;
+        public const decimal BASIS_ANNUAL_MAXIMUM = PropertiesHealth2014.BASIS_ANNUAL_MAXIMUM;
 
         public const decimal FACTOR_COMPOUND = PropertiesHealth2014.FACTOR_COMPOUND;
 
