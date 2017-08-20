@@ -27,7 +27,7 @@ namespace NetPayroll.Guides.Common
 
         public uint Code { get; private set; }
 
-        public uint YearByte()
+        public uint YearUInt()
         {
             return (Code / 100);
         }

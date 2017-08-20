@@ -17,5 +17,10 @@ namespace NetPayroll.Guides.Common
         {
             return GuidesPeriod.IsPeriodValid(period);
         }
-    }
+
+		public bool IsPeriodBetween(Period period, byte monthFrom, byte monthUpto)
+		{
+			return GuidesPeriod.IsPeriodBetween(period, monthFrom, monthUpto);
+		}
+	}
 }

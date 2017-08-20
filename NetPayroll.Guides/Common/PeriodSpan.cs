@@ -19,6 +19,13 @@ namespace NetPayroll.Guides.Common
 		{
 			return (period >= ValidFrom && period <= ValidUpto);
 		}
+		public bool IsPeriodBetween(Period period, byte monthFrom, byte monthUpto)
+		{
+			Period periodFrom = new Period(ValidFrom.YearUInt(), monthFrom);
+			Period periodUpto = new Period(ValidFrom.YearUInt(), monthUpto);
+
+			return (period >= periodFrom && period <= periodUpto);
+		}
 		public static bool operator <(PeriodSpan x, PeriodSpan y)
 		{
 			return (x.ValidFrom < y.ValidFrom) || (x.ValidFrom == y.ValidFrom && (x.ValidUpto < y.ValidUpto));
