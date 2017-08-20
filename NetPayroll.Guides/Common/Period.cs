@@ -137,7 +137,12 @@ namespace NetPayroll.Guides.Common
             return result;
         }
 
-        public override string ToString()
+		public string YearToString()
+		{
+			return this.Year().ToString();
+		}
+
+		public override string ToString()
         {
             return this.Code.ToString();
         }

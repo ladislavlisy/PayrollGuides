@@ -70,18 +70,33 @@
     <Compile Include="Interfaces\IContractTaxing.cs" />
     <Compile Include="Contract.Social\ContractSocial2011.cs" />
     <Compile Include="Contract.Taxing\ContractTaxing2011.cs" />
-    <Compile Include="Contract.Employ\ContractEmploy.cs" />
     <Compile Include="Contract.Employ\ContractEmployPrototype.cs" />
     <Compile Include="Interfaces\IContractEmploy.cs" />
     <Compile Include="Constants\WorkHealthTerms.cs" />
     <Compile Include="Constants\WorkSocialTerms.cs" />
     <Compile Include="Constants\WorkEmployTerms.cs" />
+    <Compile Include="Factories\ContractFactory.cs" />
+    <Compile Include="Common\GeneralFactory.cs" />
+    <Compile Include="Common\PeriodSpan.cs" />
+    <Compile Include="ContractServiceModule.cs" />
+    <Compile Include="Interfaces\IServiceContract.cs" />
+    <Compile Include="Interfaces\IProfileContract.cs" />
+    <Compile Include="History\IHistoryContract.cs" />
+    <Compile Include="ProfileContract.cs" />
+    <Compile Include="History\HistoryContract.cs" />
+    <Compile Include="Contract.Employ\ContractEmployHistory.cs" />
+    <Compile Include="Contract.Health\ContractHealthHistory.cs" />
+    <Compile Include="Contract.Employ\ContractEmploy2011.cs" />
+    <Compile Include="Contract.Social\ContractSocialHistory.cs" />
+    <Compile Include="Contract.Taxing\ContractTaxingHistory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Service\" />
     <Folder Include="Constants\" />
+    <Folder Include="Factories\" />
+    <Folder Include="History\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
