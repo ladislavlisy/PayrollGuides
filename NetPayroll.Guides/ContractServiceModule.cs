@@ -29,7 +29,7 @@ namespace NetPayroll.Guides
 			SocialHistory = ContractSocialHistory.CreateContracts();
 		}
 
-		public IProfileContract BuildEngineProfile(Period period)
+		public IProfileContract BuildProfile(Period period)
 		{
 			IContractEmploy employContract = EmployHistory.ResolveContract(period);
 			IContractTaxing taxingContract = TaxingHistory.ResolveContract(period);
