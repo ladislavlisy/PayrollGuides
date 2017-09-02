@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPayroll.Social", "Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPayroll.Taxing", "TestsPayroll.Taxing\TestsPayroll.Taxing.csproj", "{2972DA0C-1DD7-4B32-A69C-56771505252C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPayroll.Employ", "TestsPayroll.Employ\TestsPayroll.Employ.csproj", "{6BF28618-430D-49FE-BDBD-E3050639667C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{2972DA0C-1DD7-4B32-A69C-56771505252C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2972DA0C-1DD7-4B32-A69C-56771505252C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2972DA0C-1DD7-4B32-A69C-56771505252C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF28618-430D-49FE-BDBD-E3050639667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF28618-430D-49FE-BDBD-E3050639667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF28618-430D-49FE-BDBD-E3050639667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF28618-430D-49FE-BDBD-E3050639667C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

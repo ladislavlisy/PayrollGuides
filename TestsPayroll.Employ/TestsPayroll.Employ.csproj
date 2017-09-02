@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2972DA0C-1DD7-4B32-A69C-56771505252C}</ProjectGuid>
+    <ProjectGuid>{6BF28618-430D-49FE-BDBD-E3050639667C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TestsPayroll.Taxing</RootNamespace>
-    <AssemblyName>TestsPayroll.Taxing</AssemblyName>
+    <RootNamespace>TestsPayroll.Employ</RootNamespace>
+    <AssemblyName>TestsPayroll.Employ</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,20 +33,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HappyTests\WorksheetHoursHappyTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HappyTests\" />
     <Folder Include="SadTests\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="HappyTests\TaxAdvanceBaseHappyTest.cs" />
-    <Compile Include="HappyTests\TaxWithholdBaseHappyTest.cs" />
-    <Compile Include="HappyTests\TaxAdvancePaymentHappyTest.cs" />
-    <Compile Include="HappyTests\TaxWithholdPaymentHappyTest.cs" />
-    <Compile Include="HappyTests\TaxAllowanceHappyTest.cs" />
-    <Compile Include="SadTests\TaxAdvanceBaseSadTest.cs" />
-    <Compile Include="SadTests\TaxWithholdBaseSadTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
