@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04DEA945-AEC1-4FE3-B07F-E2EED6E63CF3}</ProjectGuid>
+    <ProjectGuid>{39623FF4-31D4-46FD-BF93-EC34D978C05A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TestPayroll.Guides</RootNamespace>
-    <AssemblyName>TestPayroll.Guides</AssemblyName>
+    <RootNamespace>TestsPayroll.Health</RootNamespace>
+    <AssemblyName>TestsPayroll.Health</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,19 +33,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Health\HealthInsurance2011.cs" />
+    <Compile Include="HappyTests\HealthEmployeeParticipateHappyTest.cs" />
+    <Compile Include="HappyTests\HealthEmployeePaymentHappyTest.cs" />
+    <Compile Include="HappyTests\HealthEmployerPaymentHappyTest.cs" />
+    <Compile Include="HappyTests\HealthObligatoryInsuranceHappyTest.cs" />
+    <Compile Include="SadTests\HealthEmployeeParticipateSadTest.cs" />
+    <Compile Include="SadTests\HealthObligatoryInsuranceSadTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Health\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NetPayroll.Guides\NetPayroll.Guides.csproj">
-      <Project>{CE4D4794-8E62-46DE-8476-CDFFAB22F50B}</Project>
-      <Name>NetPayroll.Guides</Name>
-    </ProjectReference>
+    <Folder Include="HappyTests\" />
+    <Folder Include="SadTests\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
